@@ -17,7 +17,7 @@ public class Program {
         Locale.setDefault(Locale.US);
         Scanner sc = new Scanner(System.in);
 
-        System.out.print("Enter the rental date:");
+        System.out.println("Enter the rental date:");
         System.out.print("Car model: ");
         String carModel = sc.nextLine();
         System.out.print("retreat(dd/MM/yyyy): ");
@@ -37,9 +37,9 @@ public class Program {
         rentalService.processInvoice(carRental);
 
         System.out.println("INVOICE: ");
-        System.out.print("Basic payment: " + String.format("%.2f", carRental.getInvoice().getBasicPayment()));
-        System.out.print("Tax: " + String.format("%.2f",carRental.getInvoice().getTax()));
-        System.out.print("Full payment: " + String.format("%.2f",carRental.getInvoice().getotalPayment()));
+        System.out.println("Basic payment: " + String.format("%.2f", carRental.getInvoice().getBasicPayment()));
+        System.out.println("Tax: " + String.format("%.2f",carRental.getInvoice().getTax()));
+        System.out.println("Full payment: " + String.format("%.2f",carRental.getInvoice().getotalPayment()));
 
         sc.close();
     }
