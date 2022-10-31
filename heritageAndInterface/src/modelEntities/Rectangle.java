@@ -2,7 +2,7 @@ package modelEntities;
 
 import modelEnums.Color;
 
-public class Rectangle extends Shape{
+public class Rectangle extends AbstractShape{
 
     private Double width;
 
