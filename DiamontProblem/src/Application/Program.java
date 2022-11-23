@@ -12,7 +12,7 @@ public class Program {
         p.processDoc("My letter");
         p.print("My letter");
         System.out.println();
-        
+
         ConcreteScanner s = new ConcreteScanner("2003");
         s.processDoc("My email");
         System.out.println("Scan result: " + s.scan());

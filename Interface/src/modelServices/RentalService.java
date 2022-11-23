@@ -19,7 +19,6 @@ public class RentalService {
     }
 
     public void processInvoice(CarRental carRental) {
-
         double minutes = Duration.between(carRental.getStart(), carRental.getFinish()).toMinutes();
         double hours = minutes / 60;
 
