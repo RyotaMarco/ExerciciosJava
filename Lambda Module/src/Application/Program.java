@@ -13,7 +13,7 @@ public class Program {
             if (numbers[i] % 2 != 0) {
                 numbers[i] += globalValue;
 
-                /* não é uma transparente referencial pois a função depende de um valor externo */
+
             }
         }
     }
